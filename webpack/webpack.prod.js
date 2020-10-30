@@ -55,22 +55,7 @@ const webpackConfig = {
                 use: [
                     "css-loader",
                     "postcss-loader",
-                    {
-                        loader: "less-loader",
-                        options: {
-                            // modifyVars: {
-                            //   "@brand-primary": "red"
-                            // },
-                            modifyVars: {
-                                // 引入antd 主题颜色覆盖文件
-                                hack: `true; @import "${path.join(
-                                    configs.root,
-                                    "less/constants/theme.less"
-                                )}";`,
-                            },
-                            javascriptEnabled: true,
-                        },
-                    },
+                    "less-loader"
                 ]
             },
             {

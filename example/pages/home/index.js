@@ -1,6 +1,5 @@
 import React, { Component, useState, useEffect } from 'react';
 import "./index.less";
-import { connect } from "react-redux";
 import VirtualList from '../../../src/index';
 
 class Home extends React.Component {

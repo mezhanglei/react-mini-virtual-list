@@ -17,8 +17,6 @@ const srcPath = path.join(root, 'src');
 const examplePath = path.join(root, 'example');
 // 静态资源所在目录
 const staticPath = path.join(root, 'static');
-// 全局less所在目录
-const lessPath = path.join(root, 'less');
 // 项目输出dist目录
 const devOutputPath = path.join(root, "dist");
 // 页面所在的根目录
@@ -37,8 +35,7 @@ const baseConfig = {
         alias: {
             "@": `${examplePath}`,
             "example": `${examplePath}`,
-            "static": `${staticPath}`,
-            "less": `${lessPath}`
+            "static": `${staticPath}`
         }
     },
     // 暴露的全局模块，如果加载的模块没有使用，则不会被打包

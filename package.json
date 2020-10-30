@@ -5,7 +5,8 @@
   "main": "lib/bundle.js",
   "repository": "https://github.com/mezhanglei",
   "files": [
-    "lib"
+    "lib",
+    "README.md"
   ],
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --config ./webpack/webpack.prod.js",
@@ -16,7 +17,13 @@
     "csslint": "stylelint src/**/*.{css,scss,less}",
     "css-fix": "stylelint src/**/*.{css,scss,less} --fix"
   },
-  "keywords": ["react-mini-virtrual-list", "mini-virtrual-list"],
+  "keywords": [
+    "react-mini-virtrual-list",
+    "mini-virtrual-list",
+    "mini-virtrual",
+    "virtrual-list",
+    "reatc-virtrual"
+  ],
   "author": "zhanglei",
   "license": "MIT",
   "devDependencies": {

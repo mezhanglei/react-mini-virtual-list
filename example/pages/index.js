@@ -2,9 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./app.js";
 
-// 引入全局样式
-import "less/index.less";
-
 // 只在开发环境下引入
 // if (process.env.NODE_ENV === 'development') {
 //     import("vconsole").then(module => {

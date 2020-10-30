@@ -58,11 +58,7 @@ import VirtualList from 'react-mini-virtrual-list';
     |-- package.json
     |-- postcss.config.js // postcss配置信息
     |-- tsconfig.json // ts配置
-    |-- example
-    |   |-- pages // 示例代码
-    |   |   |-- index.js // 入口js
-    |   |-- routes // 路由所在文件夹
-    |   |-- utils   // js工具方法
+    |-- example // 示例代码
     |-- lib // 打包代码
     |-- public // 模板
     |-- src // 源文件
