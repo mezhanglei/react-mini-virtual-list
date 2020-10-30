@@ -1,38 +1,22 @@
 # react-mini-virtrual-list
 
-## 项目安装和依赖说明
+[![Version](https://img.shields.io/badge/version-1.0.0-green)](https://www.npmjs.com/package/react-mini-virtrual-list)
+
+# Whath is virtrual list And how to use?
+
+Use when you load a large amount of data at once, The theory is to calculate the index items to be rendered according to the set size before rendering the data, and then render the list
+
+English | [中文说明](./README_CN.md)
+
+### install
 ```
-说明：react16.8, react-router4.x以上
-依赖：下载项目后在项目根目录运行命令：
-      1. 设置依赖镜像源：
-         如果镜像源为国内淘宝镜像https://registry.npm.taobao.org,则:
-           npm config set registry https://registry.npm.taobao.org
-           或cnpm config set registry https://registry.npm.taobao.org
-           或yarn config set registry https://registry.npm.taobao.org
-         如果镜像源为yarn官方镜像https://registry.yarnpkg.com,则:
-           yarn config set registry https://registry.yarnpkg.com
-      2. 下载所有的依赖： npm install 或 cnpm install 或yarn install
+npm install --save react-mini-virtrual-list
+# or
+yarn add react-mini-virtrual-list
 ```
-### 项目运行说明
-```
-npm run dev 运行项目
-npm run build 打包
-npm run eslint 检查js规范
-npm run csslint 检查css规范
-```
-### 组件说明
-```
-轻量级虚拟列表
-实现原理：在数据渲染之前根据设定的尺寸进行计算需要渲染的索引项，然后开始渲染
-适用场景: 一次性加载巨量数据时使用
-特点: 1. 支持可视区域内的渲染,可视区域外的将会被卸载
-      2. 支持自定义渲染数据, 但需要指定尺寸itemSize
-      3. 支持横向和竖向的滚动
-```
-### API
-待说明(或看代码说明)
+
 ### example
-```
+```javascript
 import VirtualList from 'react-mini-virtrual-list';
 <VirtualList
    width="auto"
@@ -48,29 +32,37 @@ import VirtualList from 'react-mini-virtrual-list';
    className="VirtualList"
   />
 ```
-### 目录说明和相应规范
-```
-    |-- .babelrc //babel配置文件
-    |-- .eslintrc.js //eslint规则配置
-    |-- .gitignore  // git提交忽略
-    |-- .prettier.config.js //prettier插件配置信息
-    |-- .stylelintrc.js // stylelint插件配置信息
-    |-- package.json
-    |-- postcss.config.js // postcss配置信息
-    |-- tsconfig.json // ts配置
-    |-- example // 示例代码
-    |-- lib // 打包代码
-    |-- public // 模板
-    |-- src // 源文件
-    |-- less         // 全局的基础css配置文件夹, 全局样式写在这里
-    |   |-- base   // 基础原子标签样式和公共基础类
-    |   |-- components // ui组件库的自定义样式(自定义组件和开源ui组件)
-    |   |-- constants // 公共的less常量
-    |   |-- pages  // 页面业务相关的公共类
-    |       |-- index.less
-    |-- static     // 打包时要拷贝的静态资源, 需要在webpack/configs文件中配置引用路径后才能生效
-    |-- webpack   // webpack配置文件夹
-        |-- configs.js  // 自定义配置
-        |-- webpack.dev.js // 开发环境
-        |-- webpack.prod.js // 生产环境
-```
+
+# Feature
+- [x] Render within the visual area is supported, and those outside the visual area will be unmounted
+- [x] Support for custom rendering data sources
+- [x] Supports horizontal and vertical scrolling
+- [x] Lightweight and easy to use
+
+## 属性说明
+
+| 名称                          | 类型                  | 默认值                                                         | 描述                                                                                                      |
+| ----------------------------- | --------------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| estimatedItemSize             | `number`              | 50                                                             | Estimated size of list elements (scroll direction)                                                                                  |
+| width和height                 | `number` / `string`   | -                                                              | The size of the visual area of the list (scroll direction)                                                                               |
+| limit                         | `number`              | -                                                              | Maximum number of lazy loads                                                  |
+| itemSize                      | `number` / `array` / `function` | -                                                    | Height (width) of list elements                                                                              |
+| onScroll                      | `function`            | -                                                              | Scroll triggered function              |
+| onItemsRendered               | `function`            | -                                                              | 46/5000 
+The function that is triggered when new data is loaded, `stopIndex` is the start and end indexes of the render |
+| overscanCount                 | `number`              | `3`                                                            | Number of pre-loaded elements (three before and three after default)                                                                                         |
+| renderItem                    | `function`            | -                                                              | Returns the rendered unit                                                                                          |
+| dataSource                    | `Array`               | -                                                              | Customize the data source for rendering                                                                                          |
+| scrollOffset                  | `number`              | -                                                              | Sets which location to scroll to                                                                                          |
+| scrollToIndex                 | `number`              | -                                                              | To set which data to scroll to, choose between `scrollOffset`                                                                                         |
+| scrollToAlignment             | `string`              | `start` / `center` / `end` / `auto`                                                                                                                   | In combination with 'scrollToIndex', specify the location of the index entry in the visible area 'start' starting area 'center' middle area 'end' tail area 'auto' automatically displays the location of 'scrollToIndex'                                                                                          |
+| scrollDirection               | `string`              | `vertical` / `horizontal`                                                            | Sets the scrolling direction of the list. Default is' vertical '                                                                                          |
+
+# Contribute
+Thanks to the inspiration from React -virtualized and React -tiny- Virtrual list, you can go to support if you want to have more and more complex features!
+
+# TODO-LIST
+- [ ] Support typescript!
+
+
+
