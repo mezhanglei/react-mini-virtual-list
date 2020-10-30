@@ -17,8 +17,8 @@ yarn add react-mini-virtrual-list
 
 ### example
 ```javascript
-import VirtualList from 'react-mini-virtrual-list';
-<VirtualList
+import VirtrualList from 'react-mini-virtrual-list';
+<VirtrualList
    width="auto"
    // scrollToAlignment="start"
    // scrollToIndex={30}

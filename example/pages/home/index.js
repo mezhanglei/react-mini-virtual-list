@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect } from 'react';
 import "./index.less";
-import VirtualList from '../../../src/index';
+import VirtrualList from '../../../src/index';
 
 class Home extends React.Component {
     constructor(props) {
@@ -37,7 +37,7 @@ class Home extends React.Component {
             <div>
                 <div className="home">首页
                 </div>
-                <VirtualList
+                <VirtrualList
                     width="auto"
                     // scrollToAlignment="start"
                     // scrollToIndex={30}
