@@ -1,6 +1,6 @@
 import * as React from 'react';
 import SizeAndPositionManager from './SizeAndPositionManager';
-import { isArray } from "@/utils/type";
+import { isArray } from "../utils/type";
 import {
     DIRECTION,
     SCROLL_CHANGE_REASON,
