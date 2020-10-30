@@ -48,8 +48,7 @@ import VirtualList from 'react-mini-virtrual-list';
 | limit                         | `number`              | -                                                              | Maximum number of lazy loads                                                  |
 | itemSize                      | `number` / `array` / `function` | -                                                    | Height (width) of list elements                                                                              |
 | onScroll                      | `function`            | -                                                              | Scroll triggered function              |
-| onItemsRendered               | `function`            | -                                                              | 46/5000 
-The function that is triggered when new data is loaded, `stopIndex` is the start and end indexes of the render |
+| onItemsRendered               | `function`            | -                                                              | The function that is triggered when new data is loaded, `stopIndex` is the start and end indexes of the render |
 | overscanCount                 | `number`              | `3`                                                            | Number of pre-loaded elements (three before and three after default)                                                                                         |
 | renderItem                    | `function`            | -                                                              | Returns the rendered unit                                                                                          |
 | dataSource                    | `Array`               | -                                                              | Customize the data source for rendering                                                                                          |
