@@ -1,12 +1,12 @@
 # react-mini-virtrual-list
 
+[English](./README.md) | 中文说明
+
 [![Version](https://img.shields.io/badge/version-1.0.0-green)](https://www.npmjs.com/package/react-mini-virtrual-list)
 
 # 适用场景和原理
 
 当一次性加载大量数据时，原理是在呈现数据之前根据设置的大小计算要呈现的索引项，然后呈现列表
-
-[English](./README.md) | 中文说明
 
 ### 快速安装
 ```

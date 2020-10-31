@@ -1,12 +1,12 @@
 # react-mini-virtrual-list
 
+English | [中文说明](./README_CN.md)
+
 [![Version](https://img.shields.io/badge/version-1.0.0-green)](https://www.npmjs.com/package/react-mini-virtrual-list)
 
 # Whath is virtrual list And how to use?
 
 Use when you load a large amount of data at once, The theory is to calculate the index items to be rendered according to the set size before rendering the data, and then render the list
-
-English | [中文说明](./README_CN.md)
 
 ### install
 ```

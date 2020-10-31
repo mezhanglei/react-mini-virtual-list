@@ -6,7 +6,8 @@
   "repository": "https://github.com/mezhanglei",
   "files": [
     "lib",
-    "README.md"
+    "README.md",
+    "README_CN.md"
   ],
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --progress --config ./webpack/webpack.prod.js",
