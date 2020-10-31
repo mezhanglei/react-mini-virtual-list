@@ -38,14 +38,14 @@ const STYLE_ITEM = {
  *          2. 支持自定义渲染数据
  *          3. 支持横向和竖向的滚动
  * estimatedItemSize: number 列表元素估算的大小(滚动方向上的)
- * width和height: number | string 列表可视区域的大小(滚动方向上的)
+ * width和height: number | string 列表区域的大小(滚动方向上的)
  * limit: number  懒加载的最大条数
  * itemSize: number | array | function(index) {} 列表元素的高度（宽度）
  * onScroll: function(scrollTop, e) {} 滚动触发的函数
  * onItemsRendered: function({startIndex: number, stopIndex: number}) {} 加载新的数据时触发的函数, startIndex, stopIndex为渲染的起始和终点索引
  * overscanCount: number 预加载的元素个数(默认前后各三个)
  * renderItem: function({index: number, style: Object}) {} 返回渲染的单元
- * dataSource: Array 渲染的数据源
+ * dataSource: array 要自定义渲染的数据源
  * scrollOffset: number 设置滚动到哪个位置
  * scrollToIndex: number 设置滚动到哪一条数据
  * scrollToAlignment: 'start' | 'center' | 'end' | 'auto' 与结合使用scrollToIndex, 指定索引项在可见区域的位置 start起始区域 center中间区域 end尾部区域 auto自动显示scrollToIndex位置所在区域
