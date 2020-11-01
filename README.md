@@ -6,7 +6,14 @@ English | [中文说明](./README_CN.md)
 
 # Whath is virtrual list And how to use?
 
-Use when you load a large amount of data at once, The theory is to calculate the index items to be rendered according to the set size before rendering the data, and then render the list
+Used when loading a large amount of data at once, the theory is to calculate the index items to render based on the set size before rendering the data, and then render the list in the visual area, outside of which it will not be rendered.
+
+# why choose it
+If you're looking for a component that simply renders list data, this might be a good choice, as it provides an easy and convenient API and flexible control over the rendering of lists.
+- [x] supports rendering within visual areas, while rendering outside visual areas will be unloaded
+- [x] supports custom rendering `dataSources`
+- [x] supports lists of horizontal and vertical scrolling directions
+- [x] Custom preload margin and load location or index
 
 ### install
 ```
@@ -32,12 +39,6 @@ import VirtrualList from 'react-mini-virtrual-list';
    className="VirtualList"
   />
 ```
-
-# Feature
-- [x] Render within the visual area is supported, and those outside the visual area will be unmounted
-- [x] Support for custom rendering data sources
-- [x] Supports horizontal and vertical scrolling
-- [x] Lightweight and easy to use
 
 ## 属性说明
 
