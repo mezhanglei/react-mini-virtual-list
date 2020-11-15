@@ -42,7 +42,7 @@ import VirtrualList from 'react-mini-virtrual-list';
 
 ## 属性说明
 
-| 名称                          | 类型                  | 默认值                                                         | 描述                                                                                                      |
+| name                          | type                  | defaultValue                                                         | description                                                                                                      |
 | ----------------------------- | --------------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
 | estimatedItemSize             | `number`              | 50                                                             | Estimated size of list elements (scroll direction)                                                                                  |
 | width和height                 | `number` / `string`   | -                                                              | The size of the visual area of the list (scroll direction)                                                                               |
