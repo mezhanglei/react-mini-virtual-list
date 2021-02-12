@@ -1,6 +1,6 @@
 {
   "name": "react-mini-virtrual-list",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "轻量级虚拟列表",
   "main": "lib/bundle.js",
   "repository": "https://github.com/mezhanglei",
@@ -87,6 +87,9 @@
     "webpack-node-externals": "^2.5.2"
   },
   "dependencies": {
+    "@types/classnames": "^2.2.11",
+    "@types/history": "^4.7.8",
+    "@types/react-router-dom": "^5.1.7",
     "antd": "^4.4.2",
     "classnames": "^2.2.6",
     "immutable": "^4.0.0-rc.12",

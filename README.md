@@ -2,7 +2,7 @@
 
 English | [中文说明](./README_CN.md)
 
-[![Version](https://img.shields.io/badge/version-1.0.1-green)](https://www.npmjs.com/package/react-mini-virtrual-list)
+[![Version](https://img.shields.io/badge/version-2.0.0-green)](https://www.npmjs.com/package/react-mini-virtrual-list)
 
 # Whath is virtrual list And how to use?
 
@@ -25,19 +25,42 @@ yarn add react-mini-virtrual-list
 ### example
 ```javascript
 import VirtrualList from 'react-mini-virtrual-list';
-<VirtrualList
-   width="auto"
-   // scrollToAlignment="start"
-   // scrollToIndex={30}
-   scrollOffset={500}
-   height={400}
-   limit={200}
-   dataSource={this.state.dataSource}
-   renderItem={this.renderItem}
-   onItemsRendered={this.renderOn}
-   itemSize={50}
-   className="VirtualList"
-  />
+
+// for example
+const Home = () => {
+
+    const [dataSource, setDataSource] = useState([...new Array(100).keys()]);
+
+    const renderOn = (startIndex, stopIndex) => {
+        // console.log(startIndex, stopIndex);
+    };
+
+    const renderItem = (item: any, index: number) => {
+      return (
+        <div className="Row" key={index}>
+            Row #{item}
+        </div>
+      );
+    };
+    
+    return (
+        <>
+            <VirtrualList
+                width="auto"
+                // scrollToAlignment="start"
+                // scrollToIndex={30}
+                scrollOffset={500}
+                height={400}
+                limit={200}
+                dataSource={dataSource}
+                renderItem={renderItem}
+                onItemsRendered={renderOn}
+                itemSize={50}
+                className="VirtualList"
+            />
+        </>
+    );
+}
 ```
 
 ## 属性说明
@@ -60,9 +83,6 @@ import VirtrualList from 'react-mini-virtrual-list';
 
 # Contribute
 Thanks to the inspiration from React -virtualized and React -tiny- Virtrual list, you can go to support if you want to have more and more complex features!
-
-# TODO-LIST
-- [ ] Support typescript!
 
 
 
