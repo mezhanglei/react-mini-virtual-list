@@ -1,8 +1,8 @@
-# react-mini-virtrual-list
+# react-mini-virtual-list
 
 [English](./README.md) | 中文说明
 
-[![Version](https://img.shields.io/badge/version-2.0.0-green)](https://www.npmjs.com/package/react-mini-virtrual-list)
+[![Version](https://img.shields.io/badge/version-2.0.0-green)](https://www.npmjs.com/package/react-mini-virtual-list)
 
 # 适用场景和原理
 
@@ -18,14 +18,14 @@
 
 ### 快速安装
 ```
-npm install --save react-mini-virtrual-list
+npm install --save react-mini-virtual-list
 # or
-yarn add react-mini-virtrual-list
+yarn add react-mini-virtual-list
 ```
 
 ### 示例
 ```javascript
-import VirtrualList from 'react-mini-virtrual-list';
+import VirtualList from 'react-mini-virtual-list';
 
 // for example
 const Home = () => {
@@ -46,7 +46,7 @@ const Home = () => {
     
     return (
         <>
-            <VirtrualList
+            <VirtualList
                 width="auto"
                 // scrollToAlignment="start"
                 // scrollToIndex={30}
@@ -84,7 +84,7 @@ const Home = () => {
 | scrollDirection               | `string`              | `vertical` / `horizontal`                                                            | 设置列表的滚动方向, 默认`vertical`                                                                                          |
 
 # Contribute
-感谢来自react-virtualized以及react-tiny-virtrual-list的灵感, 如果你想拥有更多更复杂的特性,可以前往支持!
+感谢来自react-virtualized以及react-tiny-virtual-list的灵感, 如果你想拥有更多更复杂的特性,可以前往支持!
 
 
 

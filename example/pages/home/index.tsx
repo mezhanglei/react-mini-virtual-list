@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect } from 'react';
 import "./index.less";
-import VirtrualList from '../../../src/index';
+import VirtualList from '../../../src/index';
 
 
 const Home: React.FC<any> = (props) => {
@@ -19,7 +19,7 @@ const Home: React.FC<any> = (props) => {
     };
     return (
         <>
-            <VirtrualList
+            <VirtualList
                 width="auto"
                 // scrollToAlignment="start"
                 // scrollToIndex={30}

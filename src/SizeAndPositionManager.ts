@@ -1,4 +1,4 @@
-/* Forked from react-virtualized and react-tiny-virtrual-list */
+/* Forked from react-virtualized and react-tiny-virtual-list */
 import { ALIGNMENT } from './utils/types';
 
 // props

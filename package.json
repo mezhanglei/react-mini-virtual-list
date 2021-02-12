@@ -1,5 +1,5 @@
 {
-  "name": "react-mini-virtrual-list",
+  "name": "react-mini-virtual-list",
   "version": "2.0.0",
   "description": "轻量级虚拟列表",
   "main": "lib/bundle.js",
@@ -19,11 +19,11 @@
     "css-fix": "stylelint src/**/*.{css,scss,less} --fix"
   },
   "keywords": [
-    "react-mini-virtrual-list",
-    "mini-virtrual-list",
-    "mini-virtrual",
-    "virtrual-list",
-    "reatc-virtrual"
+    "react-mini-virtual-list",
+    "mini-virtual-list",
+    "mini-virtual",
+    "virtual-list",
+    "reatc-virtual"
   ],
   "author": "zhanglei",
   "license": "MIT",

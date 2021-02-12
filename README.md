@@ -1,10 +1,10 @@
-# react-mini-virtrual-list
+# react-mini-virtual-list
 
 English | [中文说明](./README_CN.md)
 
-[![Version](https://img.shields.io/badge/version-2.0.0-green)](https://www.npmjs.com/package/react-mini-virtrual-list)
+[![Version](https://img.shields.io/badge/version-2.0.0-green)](https://www.npmjs.com/package/react-mini-virtual-list)
 
-# Whath is virtrual list And how to use?
+# Whath is virtual list And how to use?
 
 Used when loading a large amount of data at once, the theory is to calculate the index items to render based on the set size before rendering the data, and then render the list in the visual area, outside of which it will not be rendered.
 
@@ -17,14 +17,14 @@ If you're looking for a component that simply renders list data, this might be a
 
 ### install
 ```
-npm install --save react-mini-virtrual-list
+npm install --save react-mini-virtual-list
 # or
-yarn add react-mini-virtrual-list
+yarn add react-mini-virtual-list
 ```
 
 ### example
 ```javascript
-import VirtrualList from 'react-mini-virtrual-list';
+import VirtualList from 'react-mini-virtual-list';
 
 // for example
 const Home = () => {
@@ -45,7 +45,7 @@ const Home = () => {
     
     return (
         <>
-            <VirtrualList
+            <VirtualList
                 width="auto"
                 // scrollToAlignment="start"
                 // scrollToIndex={30}
