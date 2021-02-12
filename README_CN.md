@@ -2,7 +2,7 @@
 
 [English](./README.md) | 中文说明
 
-[![Version](https://img.shields.io/badge/version-2.0.0-green)](https://www.npmjs.com/package/react-mini-virtual-list)
+[![Version](https://img.shields.io/badge/version-2.0.1-green)](https://www.npmjs.com/package/react-mini-virtual-list)
 
 # 适用场景和原理
 
@@ -21,6 +21,8 @@
 npm install --save react-mini-virtual-list
 # or
 yarn add react-mini-virtual-list
+
+旧的安装包为: react-mini-virtrual-list, 更改了名字
 ```
 
 ### 示例

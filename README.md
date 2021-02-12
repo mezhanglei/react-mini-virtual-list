@@ -2,7 +2,7 @@
 
 English | [中文说明](./README_CN.md)
 
-[![Version](https://img.shields.io/badge/version-2.0.0-green)](https://www.npmjs.com/package/react-mini-virtual-list)
+[![Version](https://img.shields.io/badge/version-2.0.1-green)](https://www.npmjs.com/package/react-mini-virtual-list)
 
 # Whath is virtual list And how to use?
 
@@ -20,6 +20,8 @@ If you're looking for a component that simply renders list data, this might be a
 npm install --save react-mini-virtual-list
 # or
 yarn add react-mini-virtual-list
+
+old NPM name is: react-mini-virtrual-list, the name is changed;
 ```
 
 ### example
