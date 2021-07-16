@@ -2,7 +2,7 @@
 
 English | [中文说明](./README_CN.md)
 
-[![Version](https://img.shields.io/badge/version-1.0.0-green)](https://www.npmjs.com/package/react-mini-virtual-list)
+[![Version](https://img.shields.io/badge/version-1.0.1-green)](https://www.npmjs.com/package/react-mini-virtual-list)
 
 # Whath is virtual list And how to use?
 
@@ -39,7 +39,7 @@ const Home = () => {
 
     const renderItem = (item: any, index: number) => {
       return (
-        <div className="Row" key={index}>
+        <div className="Row" style={item?.style} key={index}>
             Row #{item}
         </div>
       );
@@ -55,11 +55,16 @@ const Home = () => {
                 height={400}
                 limit={200}
                 dataSource={dataSource}
-                renderItem={renderItem}
                 onItemsRendered={renderOn}
                 itemSize={50}
                 className="VirtualList"
-            />
+            >
+                {
+                    dataSource?.map((item, index) => {
+                        return renderItem(item, index);
+                    })
+                }
+            </VirtualList>
         </>
     );
 }
@@ -76,7 +81,6 @@ const Home = () => {
 | onScroll                      | `function`            | -                                                              | Scroll triggered function              |
 | onItemsRendered               | `function`            | -                                                              | The function that is triggered when new data is loaded, `stopIndex` is the start and end indexes of the render |
 | overscanCount                 | `number`              | `3`                                                            | Number of pre-loaded elements (three before and three after default)                                                                                         |
-| renderItem                    | `function`            | -                                                              | Returns the rendered unit                                                                                          |
 | dataSource                    | `Array`               | -                                                              | Customize the data source for rendering                                                                                          |
 | scrollOffset                  | `number`              | -                                                              | Sets which location to scroll to                                                                                          |
 | scrollToIndex                 | `number`              | -                                                              | To set which data to scroll to, choose between `scrollOffset`                                                                                         |

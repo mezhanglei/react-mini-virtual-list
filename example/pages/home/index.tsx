@@ -12,7 +12,7 @@ const Home: React.FC<any> = (props) => {
 
     const renderItem = (item: any, index: number) => {
         return (
-            <div className="Row" key={index}>
+            <div className="Row" style={item?.style} key={index}>
                 Row #{item}
             </div>
         );
@@ -27,11 +27,16 @@ const Home: React.FC<any> = (props) => {
                 height={400}
                 limit={200}
                 dataSource={dataSource}
-                renderItem={renderItem}
                 onItemsRendered={renderOn}
-                itemSize={50}
+                itemSize={100}
                 className="VirtualList"
-            />
+            >
+                {
+                    dataSource?.map((item, index) => {
+                        return renderItem(item, index);
+                    })
+                }
+            </VirtualList>
         </>
     );
 };

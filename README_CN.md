@@ -2,7 +2,7 @@
 
 [English](./README.md) | 中文说明
 
-[![Version](https://img.shields.io/badge/version-1.0.0-green)](https://www.npmjs.com/package/react-mini-virtual-list)
+[![Version](https://img.shields.io/badge/version-1.0.1-green)](https://www.npmjs.com/package/react-mini-virtual-list)
 
 # 适用场景和原理
 
@@ -40,7 +40,7 @@ const Home = () => {
 
     const renderItem = (item: any, index: number) => {
       return (
-        <div className="Row" key={index}>
+        <div className="Row" style={item?.style} key={index}>
             Row #{item}
         </div>
       );
@@ -56,11 +56,16 @@ const Home = () => {
                 height={400}
                 limit={200}
                 dataSource={dataSource}
-                renderItem={renderItem}
                 onItemsRendered={renderOn}
                 itemSize={50}
                 className="VirtualList"
-            />
+            >
+                {
+                    dataSource?.map((item, index) => {
+                        return renderItem(item, index);
+                    })
+                }
+            </VirtualList>
         </>
     );
 }
@@ -78,7 +83,6 @@ const Home = () => {
 | onScroll                      | `function`            | -                                                              | 滚动触发的函数              |
 | onItemsRendered               | `function`            | -                                                              | 加载新的数据时触发的函数, `stopIndex`为渲染的起始和终点索引 |
 | overscanCount                 | `number`              | `3`                                                            | 预加载的元素个数(默认前后各三个)                                                                                          |
-| renderItem                    | `function`            | -                                                              | 返回渲染的单元                                                                                          |
 | dataSource                    | `Array`               | -                                                              | 自定义渲染的数据源                                                                                          |
 | scrollOffset                  | `number`              | -                                                              | 设置滚动到哪个位置                                                                                          |
 | scrollToIndex                 | `number`              | -                                                              | 设置滚动到哪一条数据, 与 scrollOffset选其一                                                                                         |
