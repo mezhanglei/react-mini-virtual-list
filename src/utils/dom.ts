@@ -43,3 +43,23 @@ export function removeEvent(el: any, event: string, handler: (...rest: any[]) =>
         el['on' + event] = null;
     }
 }
+
+/**
+ * 设置滚动距离（兼容写法）
+ * @param ele 目标元素
+ * @param x 横轴坐标
+ * @param y 纵轴坐标
+ */
+ export function setScroll(ele: HTMLElement, x: number, y: number): void {
+    if ([document.documentElement, document.body].includes(ele)) {
+        document.documentElement.scrollTop = y || 0;
+        document.documentElement.scrollLeft = x || 0;
+    } else {
+        if (ele) {
+            ele.scrollTop = y || 0;
+            ele.scrollLeft = x || 0;
+        } else if (window) {
+            window.scrollTo(x || 0, y || 0);
+        }
+    }
+};

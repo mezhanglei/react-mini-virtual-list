@@ -2,7 +2,7 @@
 
 [English](./README.md) | 中文说明
 
-[![Version](https://img.shields.io/badge/version-1.0.1-green)](https://www.npmjs.com/package/react-mini-virtual-list)
+[![Version](https://img.shields.io/badge/version-1.0.2-green)](https://www.npmjs.com/package/react-mini-virtual-list)
 
 # 适用场景和原理
 
@@ -50,8 +50,6 @@ const Home = () => {
         <>
             <VirtualList
                 width="auto"
-                // scrollToAlignment="start"
-                // scrollToIndex={30}
                 scrollOffset={500}
                 height={400}
                 limit={200}
