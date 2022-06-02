@@ -2,7 +2,7 @@
 
 English | [中文说明](./README_CN.md)
 
-[![Version](https://img.shields.io/badge/version-1.0.2-green)](https://www.npmjs.com/package/react-mini-virtual-list)
+[![Version](https://img.shields.io/badge/version-1.0.3-green)](https://www.npmjs.com/package/react-mini-virtual-list)
 
 # Whath is virtual list And how to use?
 
