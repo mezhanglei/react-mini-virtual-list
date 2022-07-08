@@ -1,8 +1,8 @@
 {
   "name": "react-mini-virtual-list",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "轻量级虚拟列表",
-  "main": "lib/bundle.js",
+  "main": "lib/index.js",
   "types": "./lib/index.d.ts",
   "repository": "https://github.com/mezhanglei",
   "files": [
