@@ -2,7 +2,7 @@
 
 [English](./README.md) | 中文说明
 
-[![Version](https://img.shields.io/badge/version-1.0.5-green)](https://www.npmjs.com/package/react-mini-virtual-list)
+[![Version](https://img.shields.io/badge/version-1.0.6-green)](https://www.npmjs.com/package/react-mini-virtual-list)
 
 # 适用场景和原理
 
